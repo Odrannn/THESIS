@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account' ></i>
+                    <span class="links_name">Account</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-file' ></i>
+                    <span class="links_name">File Received</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-notification' ></i>
+                    <span class="links_name">Send Notification</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+    </div>
+
+    <div class="dashboard_content">
+        <div class="text">Dashboard</div>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Complaint Analysis</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/suggestion.jpg">
+                <div class="box">
+                    <p>Suggestion Analysis</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Resident Management</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Barangay Healthcare Center</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Business Profiling</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Request Verification</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Officials Management</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Events & Announcements</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Blotter Management</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>User Management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
